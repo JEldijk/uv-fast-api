@@ -1,5 +1,7 @@
+import utils
+
 def main():
-    print("Hello from api-2!")
+    print(utils.hello())
 
 
 if __name__ == "__main__":

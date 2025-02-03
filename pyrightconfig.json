@@ -1,4 +1,4 @@
 {
     "typeCheckingMode": "strict",
-    "include": ["./apps"],
+    "include": ["./apps", "./libs/*"],
 }

@@ -1,6 +1,14 @@
 version = 1
 requires-python = ">=3.13"
 
+[manifest]
+members = [
+    "api",
+    "api-2",
+    "utils",
+    "vu-fast-api",
+]
+
 [[package]]
 name = "annotated-types"
 version = "0.7.0"
@@ -22,6 +30,16 @@ sdist = { url = "https://files.pythonhosted.org/packages/f6/40/318e58f669b1a9e00
 wheels = [
     { url = "https://files.pythonhosted.org/packages/a0/7a/4daaf3b6c08ad7ceffea4634ec206faeff697526421c20f07628c7372156/anyio-4.7.0-py3-none-any.whl", hash = "sha256:ea60c3723ab42ba6fff7e8ccb0488c898ec538ff4df1f1d5e642c3601d07e352", size = 93052 },
 ]
+
+[[package]]
+name = "api"
+version = "0.1.0"
+source = { editable = "apps/api" }
+
+[[package]]
+name = "api-2"
+version = "0.1.0"
+source = { virtual = "apps/api-2" }
 
 [[package]]
 name = "certifi"
@@ -568,6 +586,11 @@ wheels = [
     { url = "https://files.pythonhosted.org/packages/d7/0c/9837fece153051e19c7bade9f88f9b409e026b9525927824cdf16293b43b/ujson-5.10.0-cp313-cp313-win32.whl", hash = "sha256:4c4fc16f11ac1612f05b6f5781b384716719547e142cfd67b65d035bd85af165", size = 38766 },
     { url = "https://files.pythonhosted.org/packages/d7/72/6cb6728e2738c05bbe9bd522d6fc79f86b9a28402f38663e85a28fddd4a0/ujson-5.10.0-cp313-cp313-win_amd64.whl", hash = "sha256:4573fd1695932d4f619928fd09d5d03d917274381649ade4328091ceca175539", size = 42212 },
 ]
+
+[[package]]
+name = "utils"
+version = "0.1.0"
+source = { editable = "libs/utils" }
 
 [[package]]
 name = "uvicorn"

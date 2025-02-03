@@ -22,3 +22,15 @@ this is an example project to enw explore python libs and tools
 - tests: `uv run pytest`
 - lint: `uv run ruff`
 - typecheck `uv run pyright`
+
+## run scripts
+
+- `uv run apps/api-2/hello.py`
+
+## create libs
+
+- `uv init --lib libs/utils`
+
+## create apps
+
+- `uv init --package api`

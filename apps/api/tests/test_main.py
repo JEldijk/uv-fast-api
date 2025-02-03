@@ -1,7 +1,7 @@
 from fastapi.testclient import TestClient
 
-from app.config import Settings, get_settings
-from app.main import app
+from src.api.config import Settings, get_settings
+from src.api.main import app
 
 client = TestClient(app)
 mockSettings = Settings(admin_email="testing_admin@example.com")
