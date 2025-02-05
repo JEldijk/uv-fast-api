@@ -1,0 +1,3 @@
+{
+    "databricks.python.envFile": "${workspaceFolder}/.env",
+}

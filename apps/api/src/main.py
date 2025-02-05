@@ -12,6 +12,6 @@ app = FastAPI()
 async def info(settings: CommonSettings):
     if not settings.admin_email:
         raise ValueError("admin_email is required")
-    
+
     LOG.error(f"admin_email: {settings.admin_email}")
     return settings.model_dump_json()

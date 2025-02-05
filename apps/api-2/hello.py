@@ -1,5 +1,5 @@
 import utils
-from utils.logging import init_logging, Format, LogLevels
+from utils.logging import Format, LogLevels, init_logging
 
 LOG = init_logging(format=Format.console, log_level=LogLevels.DEBUG)
 
