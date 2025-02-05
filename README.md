@@ -11,10 +11,14 @@ this is an example project to enw explore python libs and tools
     - [pydantic](https://docs.pydantic.dev/latest/)
 
 
+https://www.youtube.com/watch?v=ZuQzIbRoFC4&t=873s
+https://www.linkedin.com/pulse/databricks-asset-bundles-uv-python-package-project-manager-pires-1uwqf
+https://github.com/doug-pires/uv_dab/blob/master/pyproject.toml
+
 ## init the project
 
 - [install uv](https://docs.astral.sh/uv/getting-started/installation/)
-- install packages via `uv sync`
+- install all workspace packages via `uv sync --all-packages`
 
 
 ## ci
@@ -26,6 +30,7 @@ this is an example project to enw explore python libs and tools
 ## run scripts
 
 - `uv run apps/api-2/hello.py`
+- `uv run fastapi run apps/api/src/main.py`
 
 ## create libs
 
