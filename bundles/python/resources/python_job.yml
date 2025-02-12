@@ -47,3 +47,8 @@ resources:
             autoscale:
                 min_workers: 1
                 max_workers: 4
+            spark_conf:
+                "spark.executor.memory": "4g"
+                "spark.executor.cores": "2"
+                "spark.hadoop.fs.s3a.access.key": "{{secrets/your_scope/YOUR_ACCESS_KEY}}" # https://docs.databricks.com/en/security/secrets/secrets-spark-conf-env-var.html#reference-a-secret-with-a-spark-configuration-property
+                "spark.hadoop.fs.s3a.secret.key": "{{secrets/your_scope/YOUR_SECRET_KEY}}"

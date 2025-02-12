@@ -1,10 +1,10 @@
 from databricks.sdk.runtime import *  # noqa: F403
 # from pyspark.sql.context import SQLContext
 # from pyspark.sql.functions import udf as U
-# from pyspark.sql.session import SparkSession
+from pyspark.sql.session import SparkSession
 
 # udf = U
-# spark: SparkSession
+spark: SparkSession
 # sc = spark.sparkContext
 # sqlContext: SQLContext  # noqa: N816
 # sql = sqlContext.sql
